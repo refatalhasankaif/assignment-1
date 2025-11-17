@@ -1,6 +1,6 @@
 ## টাইপস্ক্রিপ্টে ইন্টারফেস এবং টাইপের মধ্যে পার্থক্যঃ
 
-Interfaces বেশিরভাগ সময় Object এর গঠন কেমন হবে তা বর্ণনা করতে ব্যবহার করা হয়। Type ব্যবহার করা হয় Object এবং অন্যান্য জিনিস যেমন Unions, intersections ইত্যাদি এর গঠন কেমন হবে তা বর্ণনা করতে। Interfaces কে একই নামে আবার লিখে প্রসারিত করা যাই কিন্তু Type কে প্রসারিত করতে গেলে তা Error দেখাই। Type সাধারণত ব্যবহার করা হয় এবং Interfaces Object এর ক্ষেত্রে ব্যবহার করা সহজ।
+Interfaces বেশিরভাগ সময় Object এর গঠন কেমন হবে তা বর্ণনা করতে ব্যবহার করা হয়। Type ব্যবহার করা হয় সাধারণ ক্ষেত্রে। Interfaces কে একই নামে আবার লিখে প্রসারিত করা যাই এবং Type কে প্রসারিত করতে (Intersection) & ব্যবহার করতে হয়। Type সাধারণত ব্যবহার করা হয় এবং Interfaces Object এর ক্ষেত্রে ব্যবহার করা সহজ।
 
 ## টাইপস্ক্রিপ্টে keyof কীওয়ার্ডের এর ব্যবহারঃ
 
@@ -23,7 +23,7 @@ const person1 = {
     age: 19
 };
 
-personDetails(person1, "name"); //✅ Hasib
-personDetails(person1, "email"); //❌ এইখানে Error দেখানোর কারণ email নামের কোনো key Person অবজেক্টের ভেতরে নেই ।
+personDetails(person1, "name"); // Hasib
+personDetails(person1, "email"); // এইখানে Error দেখানোর কারণ email নামের কোনো key Person অবজেক্টের ভেতরে নেই ।
 
 ```
