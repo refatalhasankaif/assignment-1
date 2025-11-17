@@ -10,7 +10,7 @@ const formatValue = (input: SrtNumBool): SrtNumBool => {
   }
 };
 
-type StrOrArr = string | Array<any>;
+type StrOrArr = string | Array<unknown>;
 
 const getLength = (input: StrOrArr): number => {
   if (typeof input === 'string') {
@@ -101,7 +101,6 @@ const getUniqueValues = (array1: ArrayType, array2: ArrayType): ArrayType => {
   }
 
   return returnArray;
-
 };
 
 interface ProductType {
