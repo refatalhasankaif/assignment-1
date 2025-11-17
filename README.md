@@ -24,6 +24,6 @@ const person1 = {
 };
 
 personDetails(person1, "name"); //✅ Hasib
-personDetails(person1, "email"); //❌ এইখানে Error দেখানোর কারণ email নামের কোনো কী Person অবজেক্টের ভেতরে নেই ।
+personDetails(person1, "email"); //❌ এইখানে Error দেখানোর কারণ email নামের কোনো key Person অবজেক্টের ভেতরে নেই ।
 
 ```
