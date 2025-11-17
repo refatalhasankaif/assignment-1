@@ -111,6 +111,10 @@ interface ProductType {
 };
 
 const calculateTotalPrice = (products: ProductType[]): number => {
+  if (products.length === 0) {
+    return 0;
+  }
+  
   return products.reduce((total, product) => {
     const price = product.price;
     const quantity = product.quantity;
